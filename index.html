@@ -4,7 +4,8 @@
         <title>Mount</title>
         <link rel="icon" href="static/favicon.ico">
     </head>
-    <body style="background-color: #d6cfc8;">//logo圖片
+    <body style="background-color: #d6cfc8;">
+        //logo圖片
         <table width="100%">
             <tr height="30px"></tr>
              <tr>
@@ -15,7 +16,8 @@
         </table>
     
 
-    <table>//輸入帳密的地方
+    <table>
+        //輸入帳密的地方
         <tr><td width="68%"></td><td>Name <td><input id='name' type=text> <td id='msgName'></td>
         <tr><td width="68%"></td><td>Password<td><input id='password' type=text> <td id='msgPassword'></td>
         <tr><td width="68%"></td><td><td><button id='submit'>Submit</button>
@@ -30,15 +32,15 @@
         
         function validate() {
          const name = document.getElementById('name').value;
-         const phone = document.getElementById('password').value;
+         const pwd = document.getElementById('pwd').value;
          if (name == '')
         document.getElementById('msgName').innerHTML = '<font color="red">This field cannot be empty.</font>';
         else
-        document.getElementById('msgPassword').innerHTML = '';
+        document.getElementById('msgPwd').innerHTML = '';
         if (password == '')
-        document.getElementById('msgPassword').innerHTML = '<font color="red">This field cannot be empty.</font>';
+        document.getElementById('msgPwd').innerHTML = '<font color="red">This field cannot be empty.</font>';
         else
-        document.getElementById('msgPassword').innerHTML = '';
+        document.getElementById('msgPwd').innerHTML = '';
         }
         </script>
 </html>
