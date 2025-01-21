@@ -5,11 +5,38 @@
     </head>
     <body style="background-color: #d6cfc8;">
         <table width="100%">
+            <tr height="30px"></tr>
              <tr>
-                <td heeight="200px" width="40%"></td>
-                <td><img width="300" src="logo.jpg"/></td>
+                <td height="200px" width="37%"></td>
+                <td><img width="300" src="static/logo.jpg"/></td>
                 <td height="200px" width="30%"></td>
             </tr>
         </table>
+    
+
+    <table>
+        <tr><td width="68%"></td><td>Name <td><input id='name' type=text> <td id='msgName'></td>
+        <tr><td width="68%"></td><td>Password<td><input id='password' type=text> <td id='msgPassword'></td>
+        <tr><td width="68%"></td><td><td><button id='submit'>Submit</button>
+        </table>
     </body>
+
+    
+        <script>
+        const btn = document.getElementById('submit');
+        btn.addEventListener('click', validate);
+        
+        function validate() {
+         const name = document.getElementById('name').value;
+         const phone = document.getElementById('phone').value;
+         if (name == '')
+        document.getElementById('msgName').innerHTML = '<font color="red">This field cannot be empty.</font>';
+        else
+        document.getElementById('msgPassword').innerHTML = '';
+        if (password == '')
+        document.getElementById('msgPassword').innerHTML = '<font color="red">This field cannot be empty.</font>';
+        else
+        document.getElementById('msgPassword').innerHTML = '';
+        }
+        </script>
 </html>
